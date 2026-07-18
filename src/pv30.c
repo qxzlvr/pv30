@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <time.h>
 
-#define UTIME_2030 1893456001 // UNIX TIMESTAMP FOR 1ST OF JAN 2030 00:00
+#define UTIME_2030 1893456001 // UNIX TIMESTAMP FOR 1ST OF JAN 2030 00:01
 
 
 int main(int argc, char* argv[]) {
