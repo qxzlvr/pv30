@@ -16,7 +16,12 @@ int main(int argc, char* argv[]) {
 					break;
 				case 'a':
 					double tmr = difftime(tm, (time_t)UTIME_2030);
-					printf("days remaining to January 1st 2030 00:00 : %d\n", abs((int)(tmr/86400)));
+					if (tmr > 0) {
+						printf("Good luck!, you are gonna need it a ton...\n");
+						printf("%d days have passed after the start of 2030...\n");
+					} else {
+						printf("days remaining to January 1st 2030 00:00 : %d\n", abs((int)(tmr/86400)));
+					}
 					return 0;
 					break;
 				default:
