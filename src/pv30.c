@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <time.h>
 
-#define UTIME_2030 1893456000 // UNIX TIMESTAMP FOR 1ST OF JAN 2030 00:00
+#define UTIME_2030 1893456001 // UNIX TIMESTAMP FOR 1ST OF JAN 2030 00:00
 
 
 int main(int argc, char* argv[]) {
@@ -18,9 +18,9 @@ int main(int argc, char* argv[]) {
 					double tmr = difftime(tm, (time_t)UTIME_2030);
 					if (tmr > 0) {
 						printf("Good luck!, you are gonna need it a ton...\n");
-						printf("%d days have passed after the start of 2030...\n");
+						printf("%d days have passed after the start of 2030...\n", abs((int)(tmr/86400)));
 					} else {
-						printf("days remaining to January 1st 2030 00:00 : %d\n", abs((int)(tmr/86400)));
+						printf("%d days remaining to January 1st 2030\n", abs((int)(tmr/86400)));
 					}
 					return 0;
 					break;
