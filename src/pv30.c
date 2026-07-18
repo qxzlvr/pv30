@@ -11,7 +11,7 @@ int main(int argc, char* argv[]) {
 		if (argv[1][0] == '-' && &argv[1][1] != NULL) {
 			switch (argv[1][1]) {
 				case 'h':
-					printf("SAMPLE HELP TEXT\n");
+					printf("-h: displays help\n-a: displays days remaining to 1st of January 2030\n");
 					return 0;
 					break;
 				case 'a':
