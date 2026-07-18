@@ -1,0 +1,13 @@
+### PRIMITIVE DATE COMMAND CLONE, 
+### WITH A FEATURE TO DISPLAY DAYS LEFT TO JAN 1ST 2030 00:00
+
+Features:
+	1. Display date
+	2. pass in the -a --agenda option to get the days left to January 1st 2030 00:00
+	
+Backend Features:
+	1. Fetch date with a syscall.
+	2. Get the seconds remaining to January 1st 2030 00:00
+	3. Error handling
+	4. A message that gets displayed after January 1st 2030 00:00
+
