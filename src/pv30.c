@@ -29,7 +29,11 @@ int main(int argc, char* argv[]) {
 			}
 		}
 	} 
-	char* cdate = ctime(&tm);
+	char cdate[30];
+	if (ctime_s(cdate, (rsize_t)(sizeof(cdate)/sizeof(char)), &tm) != 0) {
+		fprintf(stderr, "ERROR Converting time to String with ctime_s()");
+		return -1;
+	}
 	printf("%s\n", cdate);
 
 	return 0;	
